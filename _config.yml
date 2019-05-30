@@ -80,7 +80,8 @@ theme: Daily
 deploy: 
   type: git
   repo:
-     github: https://github.com/caiyuyuan/caiyuyuan.github.io.git
+#     github: https://github.com/caiyuyuan/caiyuyuan.github.io.git
+       github: git@github.com:caiyuyuan/caiyuyuan.github.io.git
   branch: master
 
 
@@ -90,3 +91,23 @@ admin:
   password_hash: $2a$10$v7BTr1.e6Eo4slKi0wB0N.InQVoYuBV176EFgUkbgdr3ePoDjclQO
   secret: hi taroballs
   deployCommand: './admin_script/hexo-deploy.sh'
+
+
+
+#Install Model
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d_models/miku
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
